@@ -99,6 +99,11 @@ namespace WPFCaptureSample
             InitMonitorList();
         }
 
+        private void CreateBitmapButton_Click(object sender, RoutedEventArgs e)
+        {
+            sample.CopyNextFrame = true;
+        }
+
         private void StopButton_Click(object sender, RoutedEventArgs e)
         {
             StopCapture();

@@ -42,6 +42,12 @@ namespace CaptureSampleCore
         private IDirect3DDevice device;
         private BasicCapture capture;
 
+        public bool CopyNextFrame
+        {
+            get => capture.CopyNextFrame;
+            set => capture.CopyNextFrame = value;
+        }
+
         public BasicSampleApplication(Compositor c)
         {
             compositor = c;

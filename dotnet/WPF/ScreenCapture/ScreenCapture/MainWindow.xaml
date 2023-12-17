@@ -41,6 +41,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <StackPanel Margin="10">
                 <Button x:Name="PickerButton" Content="Use Picker" Click="PickerButton_Click" Margin="10" />
@@ -60,7 +61,8 @@
                     </ComboBox.ItemTemplate>
                 </ComboBox>
             </StackPanel>
-            <Button x:Name="StopButton" Grid.Row="1" Content="Stop Capturing" Click="StopButton_Click" Margin="10" />
+            <Button x:Name="SaveBitmap" Grid.Row="1" Content="Create Bitmap" Click="CreateBitmapButton_Click" Margin="10" />
+            <Button x:Name="StopButton" Grid.Row="2" Content="Stop Capturing" Click="StopButton_Click" Margin="10" />
         </Grid>
 
         <Grid Grid.Column="1">
